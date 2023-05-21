@@ -30,7 +30,7 @@ HELP_TEXT = """
 DONATE_TEXT = """
 <i>- Wᴀɴᴛ Aɴʏ Pʀꜱᴏɴᴀʟ Bᴏᴛ : @OwnYourBotz</i>\n
 <u>🔸 PAYPAL: https://www.paypal.com/paypalme/AbhishekKumarIN47</u>\n
-<b>UPI : ```MrAbhi2k3@apl```</b>\n
+<b>UPI : `MrAbhi2k3@apl`</b>\n
 <i>Cᴏɴᴛᴀᴄᴛ Sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ꜱʜᴀʀᴇ Sᴄʀᴇᴇɴꜱʜᴏᴛ</i> <b>: <a href='https://t.me/TeleRoid14'>[ ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ ]</a></b>"""
 
 ABOUT_TEXT = """
