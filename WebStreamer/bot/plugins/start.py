@@ -12,20 +12,26 @@ db = Database(Var.DATABASE_URL, Var.SESSION_NAME)
 
 START_TEXT = """
 <i>👋 Hᴇʏ,</i>{}\n
-<i>I'ᴍ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ</i>\n
-<i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>\n
+<i>Tʜɪꜱ iꜱ ᴀ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs Sᴛʀᴇᴀᴍɪɴɢ & Dᴏᴡɴʟᴏᴀᴅɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ</i>\n
+<i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ Gᴇᴛ Mᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>\n
 <i><u>𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u></i>
-<b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.</b>\n\n
+<b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ Lᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ 𝘽𝘼𝙉 Yᴏᴜ.</b>\n\n
 <i><b>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</b>@HelpLessBoi</i>"""
 
 HELP_TEXT = """
 <i>- Sᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ (ᴏʀ) ᴍᴇᴅɪᴀ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.</i>
-<i>- I ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴇxᴛᴇʀɴᴀʟ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ !.</i>
+<i>- Tʜɪꜱ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ Exᴛᴇʀɴᴀʟ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋs !.</i>
 <i>- Aᴅᴅ Mᴇ ɪɴ ʏᴏᴜʀ Cʜᴀɴɴᴇʟ Fᴏʀ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋs Bᴜᴛᴛᴏɴ</i>
 <i>- Tʜɪs Pᴇʀᴍᴇᴀɴᴛ Lɪɴᴋ Wɪᴛʜ Fᴀsᴛᴇsᴛ Sᴘᴇᴇᴅ</i>\n
 <u>🔸 𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u>\n
 <b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.</b>\n
 <i>Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ (ᴏʀ) ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ</i> <b>: <a href='https://t.me/TeleRoid14'>[ ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ ]</a></b>"""
+
+DONATE_TEXT = """
+<i>- Wᴀɴᴛ Aɴʏ Pʀꜱᴏɴᴀʟ Bᴏᴛ : @OwnYourBotz</i>\n
+<u>🔸 PAYPAL: https://www.paypal.com/paypalme/AbhishekKumarIN47</u>\n
+<b>UPI : ```MrAbhi2k3@apl```</b>\n
+<i>Cᴏɴᴛᴀᴄᴛ Sᴜᴘᴘᴏʀᴛ ᴀɴᴅ ꜱʜᴀʀᴇ Sᴄʀᴇᴇɴꜱʜᴏᴛ</i> <b>: <a href='https://t.me/TeleRoid14'>[ ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ ]</a></b>"""
 
 ABOUT_TEXT = """
 <b>⚜ Mʏ ɴᴀᴍᴇ : <a href='https://t.me/KDramasFlix'>FileStreamX</a></b>\n
@@ -37,6 +43,9 @@ ABOUT_TEXT = """
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
+        InlineKeyboardButton('Cʜᴀɴɴᴇʟ', url='https://t.me/TeleRoidGroup'),
+        InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url='https://t.me/TeleRoid14')
+        ],[
         InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
         InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about'),
         InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
@@ -46,13 +55,19 @@ HELP_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('Hᴏᴍᴇ', callback_data='home'),
         InlineKeyboardButton('Aʙᴏᴜᴛ', callback_data='about'),
-        InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
+        InlineKeyboardButton('Dᴏɴᴀᴛᴇ', callback_data='donate')
         ]]
     )
 ABOUT_BUTTONS = InlineKeyboardMarkup(
         [[
         InlineKeyboardButton('Hᴏᴍᴇ', callback_data='home'),
         InlineKeyboardButton('Hᴇʟᴘ', callback_data='help'),
+        InlineKeyboardButton('Dᴏɴᴀᴛᴇ', callback_data='donate')
+        ]]
+    )
+DONATE_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('Dᴏɴᴀᴛᴇ Bᴏᴛ', url='https://t.me/DonateXRoBot'),
         InlineKeyboardButton('Cʟᴏsᴇ', callback_data='close')
         ]]
     )
@@ -70,6 +85,12 @@ async def cb_data(bot, update):
             text=HELP_TEXT,
             disable_web_page_preview=True,
             reply_markup=HELP_BUTTONS
+        )
+    elif update.data == "donate":
+        await update.message.edit_text(
+            text=DONATE_TEXT,
+            disable_web_page_preview=True,
+            reply_markup=DONATE_BUTTONS
         )
     elif update.data == "about":
         await update.message.edit_text(
@@ -173,7 +194,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ** [Aᴠɪsʜᴋᴀʀ Pᴀᴛɪʟ](https://t.me/Avishkarpatil).",
+                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ Sᴜᴘᴘᴏʀᴛ** [ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ](https://t.me/TeleRoid14).",
                     parse_mode=ParseMode.MARKDOWN,
                     disable_web_page_preview=True)
                 return
@@ -214,7 +235,6 @@ async def start(bot, update):
         disable_web_page_preview=True,
         reply_markup=ABOUT_BUTTONS
     )
-
 
 @StreamBot.on_message(filters.command('help') & filters.private)
 async def help_handler(bot, message):
