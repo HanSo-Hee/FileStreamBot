@@ -16,7 +16,8 @@ START_TEXT = """
 <i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ Gᴇᴛ Mᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>\n
 <i><u>𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u></i>
 <b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ Lᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ 𝘽𝘼𝙉 Yᴏᴜ.</b>\n\n
-<i><b>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</b>@TeleRoidGroup</i>"""
+# <i><b>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</b>@TeleRoidGroup</i>
+"""
 
 HELP_TEXT = """
 <i>- Sᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ (ᴏʀ) ᴍᴇᴅɪᴀ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.</i>
@@ -25,7 +26,8 @@ HELP_TEXT = """
 <i>- Tʜɪs Tᴇᴍᴘᴏʀᴀʏ ꜰᴏʀ 1 ᴍᴏɴᴛʜ Lɪɴᴋ Wɪᴛʜ Fᴀsᴛᴇsᴛ Sᴘᴇᴇᴅ</i>\n
 <u>🔸 𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u>\n
 <b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.</b>\n
-<i>Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ (ᴏʀ) ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ</i> <b>: <a href='https://t.me/TeleRoid14'>[ ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ ]</a></b>"""
+# <i>Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ (ᴏʀ) ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ</i> <b>: <a href='https://t.me/TeleRoid14'>[ ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ ]</a></b>
+"""
 
 DONATE_TEXT = """
 <i>- Wᴀɴᴛ Aɴʏ Pʀꜱᴏɴᴀʟ Bᴏᴛ : @OwnYourBotz</i>\n
@@ -78,25 +80,25 @@ async def cb_data(bot, update):
         await update.message.edit_text(
             text=START_TEXT.format(update.from_user.mention),
             disable_web_page_preview=True,
-            reply_markup=START_BUTTONS
+            # reply_markup=START_BUTTONS
         )
     elif update.data == "help":
         await update.message.edit_text(
             text=HELP_TEXT,
             disable_web_page_preview=True,
-            reply_markup=HELP_BUTTONS
+            # reply_markup=HELP_BUTTONS
         )
     elif update.data == "donate":
         await update.message.edit_text(
             text=DONATE_TEXT,
             disable_web_page_preview=True,
-            reply_markup=DONATE_BUTTONS
+            # reply_markup=DONATE_BUTTONS
         )
     elif update.data == "about":
         await update.message.edit_text(
             text=ABOUT_TEXT,
             disable_web_page_preview=True,
-            reply_markup=ABOUT_BUTTONS
+            # reply_markup=ABOUT_BUTTONS
         )
     else:
         await update.message.delete()
@@ -133,7 +135,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Cᴏɴᴛᴀᴄᴛ ᴛʜᴇ Dᴇᴠᴇʟᴏᴘᴇʀ Gʀᴏᴜᴘ__\n\n @TeleRoid14 ",
+                        text="__Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Cᴏɴᴛᴀᴄᴛ ᴛʜᴇ Dᴇᴠᴇʟᴏᴘᴇʀ Gʀᴏᴜᴘ_ ",
                         parse_mode=ParseMode.MARKDOWN,
                         disable_web_page_preview=True
                     )
@@ -153,7 +155,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="<i>Sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ Gʀᴏᴜᴘ</i> <b><a href='http://t.me/TeleRoid14'>[ ᴄʟɪᴄᴋ ʜᴇʀᴇ ]</a></b>",
+                    text="<i>Sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ Gʀᴏᴜᴘ</i> <b><a href='http://t.me/{Var.SUPPORT_GROUP}'>[ ᴄʟɪᴄᴋ ʜᴇʀᴇ ]</a></b>",
                     parse_mode=ParseMode.HTML,
                     disable_web_page_preview=True)
                 return
@@ -161,7 +163,7 @@ async def start(b, m):
             text=START_TEXT.format(m.from_user.mention),
             parse_mode=ParseMode.HTML,
             disable_web_page_preview=True,
-            reply_markup=START_BUTTONS
+            # reply_markup=START_BUTTONS
               )                                                                         
                                                                                        
                                                                             
@@ -172,7 +174,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="**Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Qᴜɪᴄᴋʟʏ Cᴏɴᴛᴀᴄᴛ Gʀᴏᴜᴘ** @TeleRoid14",
+                        text="**Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Qᴜɪᴄᴋʟʏ Cᴏɴᴛᴀᴄᴛ Gʀᴏᴜᴘ**",
                         parse_mode=ParseMode.MARKDOWN,
                         disable_web_page_preview=True
                     )
@@ -184,7 +186,7 @@ async def start(b, m):
                     reply_markup=InlineKeyboardMarkup(
                         [[
                           InlineKeyboardButton("🤖 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=f"https://t.me/{Var.UPDATES_CHANNEL}")],
-                         [InlineKeyboardButton("🔄 Refresh / Try Again", url=f"https://t.me/{(await b.get_me()).username}?start=AvishkarPatil_{usr_cmd}")
+                         [InlineKeyboardButton("🔄 Refresh / Try Again", url=f"https://t.me/{(await b.get_me()).username}?start=PredatorHackerzZ_{usr_cmd}")
                         
                         ]]
                     ),
@@ -194,7 +196,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ Sᴜᴘᴘᴏʀᴛ** [ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ](https://t.me/TeleRoid14).",
+                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ Sᴜᴘᴘᴏʀᴛ** [Support Group](https://t.me/{Var.SUPPORT_GROUP}).",
                     parse_mode=ParseMode.MARKDOWN,
                     disable_web_page_preview=True)
                 return
@@ -214,10 +216,10 @@ async def start(b, m):
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n
 <b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n
 <b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n
-<b>🚸 Nᴏᴛᴇ : Lɪɴᴋ ᴇxᴘɪʀᴇᴅ ɪɴ 24 ʜᴏᴜʀꜱ</b>\n
-<i>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</i> <b>@HelpLessBoi</b>
+<b>🚸 Nᴏᴛᴇ : Lɪɴᴋ ᴇxᴘɪʀᴇᴅ ɪɴ 1 Month</b>\n
+# <i>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</i> <b>@HelpLessBoi</b>
 
-<i>~ By Sponsorship of @KDramasFlix</i>
+# <i>~ By Sponsorship of @KDramasFlix</i>
 """
 
         await m.reply_text(
@@ -233,7 +235,8 @@ async def start(bot, update):
     await update.reply_text(
         text=ABOUT_TEXT.format(update.from_user.mention),
         disable_web_page_preview=True,
-        reply_markup=ABOUT_BUTTONS
+        # reply_markup=ABOUT_BUTTONS
+        quote=True
     )
 
 @StreamBot.on_message(filters.command('help') & filters.private)
@@ -270,7 +273,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ__ [ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ](https://t.me/HelpLessBoi).",
+                text="__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ__  [Support Group](https://t.me/{Var.SUPPORT_GROUP}).",
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True)
             return
@@ -278,6 +281,7 @@ async def help_handler(bot, message):
         text=HELP_TEXT,
         parse_mode=ParseMode.HTML,
         disable_web_page_preview=True,
-        reply_markup=HELP_BUTTONS
+        # reply_markup=HELP_BUTTONS
+        quote=True
         )
 
