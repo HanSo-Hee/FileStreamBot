@@ -16,7 +16,6 @@ START_TEXT = """
 <i>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ Gᴇᴛ Mᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ</i>\n
 <i><u>𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u></i>
 <b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ Lᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ 𝘽𝘼𝙉 Yᴏᴜ.</b>\n\n
-# <i><b>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</b>@TeleRoidGroup</i>
 """
 
 HELP_TEXT = """
@@ -26,7 +25,6 @@ HELP_TEXT = """
 <i>- Tʜɪs Tᴇᴍᴘᴏʀᴀʏ ꜰᴏʀ 1 ᴍᴏɴᴛʜ Lɪɴᴋ Wɪᴛʜ Fᴀsᴛᴇsᴛ Sᴘᴇᴇᴅ</i>\n
 <u>🔸 𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸</u>\n
 <b>🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.</b>\n
-# <i>Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ (ᴏʀ) ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ</i> <b>: <a href='https://t.me/TeleRoid14'>[ ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ ]</a></b>
 """
 
 DONATE_TEXT = """
@@ -155,7 +153,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="<i>Sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ Gʀᴏᴜᴘ</i> <b><a href='http://t.me/{Var.SUPPORT_GROUP}'>[ ᴄʟɪᴄᴋ ʜᴇʀᴇ ]</a></b>",
+                    text="<i>Sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ Gʀᴏᴜᴘ</i> <b><a href=f'http://t.me/{Var.SUPPORT_GROUP}'>[ ᴄʟɪᴄᴋ ʜᴇʀᴇ ]</a></b>",
                     parse_mode=ParseMode.HTML,
                     disable_web_page_preview=True)
                 return
@@ -196,7 +194,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ Sᴜᴘᴘᴏʀᴛ** [Support Group](https://t.me/{Var.SUPPORT_GROUP}).",
+                    text="<i>Sᴏᴍᴇᴛʜɪɴɢ ᴡʀᴏɴɢ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ Gʀᴏᴜᴘ</i> <b><a href=f'http://t.me/{Var.SUPPORT_GROUP}'>[ ᴄʟɪᴄᴋ ʜᴇʀᴇ ]</a></b>",
                     parse_mode=ParseMode.MARKDOWN,
                     disable_web_page_preview=True)
                 return
@@ -217,9 +215,6 @@ async def start(b, m):
 <b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n
 <b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n
 <b>🚸 Nᴏᴛᴇ : Lɪɴᴋ ᴇxᴘɪʀᴇᴅ ɪɴ 1 Month</b>\n
-# <i>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</i> <b>@HelpLessBoi</b>
-
-# <i>~ By Sponsorship of @KDramasFlix</i>
 """
 
         await m.reply_text(
@@ -273,7 +268,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ__  [Support Group](https://t.me/{Var.SUPPORT_GROUP}).",
+                text="__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴛʜᴇ Dᴇᴠᴇʟᴏᴘᴇʀ__ ",
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True)
             return
